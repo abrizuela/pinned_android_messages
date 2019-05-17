@@ -9,7 +9,7 @@ function onError(e) {
 function createPinnedTab() {
   browser.tabs.create(
     {
-      url: "https://messages.android.com",
+      url: "https://messages.google.com",
       pinned: true,
       active: true
     }
@@ -39,7 +39,7 @@ function handleSearch(messagesTabs) {
 function handleClick(tab) {
   //console.log("*********Button clicked*********");
   currentTabId = tab.id;
-  var querying = browser.tabs.query({url: "*://messages.android.com/*"});
+  var querying = browser.tabs.query({url: "*://messages.google.com/*"});
   querying.then(handleSearch, onError);
 };
 
