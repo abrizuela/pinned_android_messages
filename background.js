@@ -9,7 +9,7 @@ function onError(e) {
 function createPinnedTab() {
   browser.tabs.create(
     {
-      url: "https://messages.google.com",
+      url: "https://messages.google.com/web",
       pinned: true,
       active: true
     }
